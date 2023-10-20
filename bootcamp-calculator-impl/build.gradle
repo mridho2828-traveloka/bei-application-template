@@ -1,0 +1,9 @@
+apply plugin: "com.traveloka.common.gradle.base-library"
+
+dependencies {
+    // Notice the dependencies is only to the api module for contract
+    implementation project(":bootcamp-addition-api")
+    implementation project(":bootcamp-subtraction-api")
+
+    implementation project(":bootcamp-calculator-api")
+}
