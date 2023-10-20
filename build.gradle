@@ -23,11 +23,11 @@ buildscript {
     }
 }
 
-group "com.traveloka.<YOUR_MAVEN_SUBDOMAIN>"
+group "com.traveloka.accom"
 apply plugin: "com.traveloka.common.gradle.base-root"
 
 wrapper {
-    gradleVersion = "7.6"
+    gradleVersion = "7.6.2"
     distributionType = "bin"
 }
 
@@ -58,7 +58,6 @@ subprojects {
                 awsIm(AwsImAuthentication)
             }
         }
-        mavenLocal()
     }
 
     checkstyle {
